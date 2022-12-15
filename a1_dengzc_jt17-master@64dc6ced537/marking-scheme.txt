@@ -1,0 +1,28 @@
+Total before late penalty: [62/72]
+    ***Total after 100.0% late penalty is 0.0
+You can check file commandline_outputs.txt for the full output from the autoexpect tests.
+You can also refer to rubric at Canvas for more details.
+Automatically graded points: 50 / 58
+Criteria || Pts || Comments quit || 4 / 4 || 
+set || 4 / 4 ||  
+make || 2 / 2 || 
+prefixmatch || 6 / 6 || 
+parse || 1 / 3 || empty lines are not handled correctly, -1 pts, #s are not handled correctly, -1 pts, 
+dict || 4 / 4 ||  
+error || 4 / 6 || error 903 is not handled correctly, -1 pts, error 920 is not handled correctly, -1 pts, 
+close || 0 / 4 || Close command does not work correctly, -4 pts, 
+open || 5 / 5 || 
+match || 6 / 6 || 
+define || 14 / 14 || 
+This part is graded manually: 14 / 14
+
+Criteria || Pts || Commentsdocumented methods || 1 / 1 || 
+code quality || 5 / 5 || 
+-d option || 6 / 6 || 
+handling of error 925 || 2 / 2 ||
+-2 for extra printing when open not in -d mode. It causes many of the auto-test to fail. 
+
+
+
+
+

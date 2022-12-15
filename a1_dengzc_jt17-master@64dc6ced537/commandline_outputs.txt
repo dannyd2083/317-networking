@@ -1,0 +1,80 @@
+
+******** Test-0 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453108.27741.1666245350@dict.dict.org>
+csdict> 
+******** Test-1 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453130.27763.1666245355@dict.dict.org>
+csdict> 
+******** Test-2 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453151.27792.1666245360@dict.dict.org>
+csdict> 
+******** Test-3 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453167.27808.1666245365@dict.dict.org>
+csdict> 
+******** Test-4 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453182.27827.1666245370@dict.dict.org>
+csdict> 
+******** Test-5 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453197.27842.1666245375@dict.dict.org>
+csdict> 
+******** Test-6 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628 77
+901 Incorrect number of arguments.
+csdict> open tes. t.dict.r org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453212.27861.1666245380@dict.dict.org>
+csdict> 
+******** Test-7 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628^[[D^[[D          ^[[D^[[D             2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453353.28034.1666245425@dict.dict.org>
+csdict> 
+******** Test-8 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453364.28049.1666245430@dict.dict.org>
+csdict> 
+******** Test-9 ********
+spawn java -jar CSdict.jar
+NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+csdict> open test.dict.org nonnumber
+902 Invalid argument.
+csdict> open test.dict.org 2628
+220 dict.dict.org dictd 1.12.1/rf on Linux 4.19.0-10-amd64 <auth.mime> <147453380.28065.1666245435@dict.dict.org>
+csdict> 
+******** Test-10 ********
+spawn java -jar CSdict.jar -e
+extra characters after close-quote
+    while executing
+"expect -exact "NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m\r
+997 Invalid command line option - Only -d is allowed"\"
+    (file "/cs/csbox/cs-317/2022W1/a1/a1-dictionary-automarker/automarker/tests/script_error_997.exp" line 47)
+
+******** Test-11 ********
+spawn java -jar CSdict.jar -d -e
+extra characters after close-quote
+    while executing
+"expect -exact "NOTE: Picked up JDK_JAVA_OPTIONS: -Xmx500m
+996 Too many command line options - Only -d is allowed"\"
+    (file "/cs/csbox/cs-317/2022W1/a1/a1-dictionary-automarker/automarker/tests/script_error_996.exp" line 47)
